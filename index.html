@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandip Mali | Link Hub</title>
+  <meta name="description" content="Link Hub for all social and professional platforms of Sandip Mali - YouTuber, Web Developer." />
+  <meta name="keywords" content="Sandip Mali, Web Developer, YouTuber, Social Media, Portfolio" />
+  <meta name="author" content="Sandip Mali" />
+  <meta property="og:title" content="Sandip Mali | Link Hub" />
+  <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/4202/4202847.png" />
+  <meta property="og:url" content="https://sandipmali.com.np" />
+  <meta property="og:description" content="Connect with Sandip Mali on YouTube, Instagram, LinkedIn, and more." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    :root {
+      --bg-color: #0d0d0d;
+      --text-color: #ffffff;
+      --card-bg: #1a1a1a;
+      --handle-color: #94a3b8;
+    }
+
+    body.light-mode {
+      --bg-color: #f9fafb;
+      --text-color: #111827;
+      --card-bg: #ffffff;
+      --handle-color: #6b7280;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .toggle-mode {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: var(--card-bg);
+      color: var(--text-color);
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 3px solid #38bdf8;
+      background: #f1f5f9;
+      padding: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .profile h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.3rem;
+      color: #38bdf8;
+    }
+
+    .profile p {
+      font-size: 1rem;
+      color: var(--handle-color);
+    }
+
+    .intro {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      color: var(--handle-color);
+      text-align: center;
+    }
+
+    .section {
+      width: 100%;
+      max-width: 900px;
+      margin-bottom: 2rem;
+    }
+
+    .section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: #38bdf8;
+    }
+
+    .link-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 1.2rem;
+      border-radius: 12px;
+      background: var(--card-bg);
+      color: var(--text-color);
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .card i {
+      font-size: 1.8rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .card .title {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .card .handle {
+      font-size: 0.9rem;
+      color: var(--handle-color);
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.8rem;
+      color: var(--handle-color);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-mode" onclick="toggleMode()">Mode</button>
+  
+  <div class="profile">
+    <img src="https://cdn-icons-png.flaticon.com/512/4202/4202847.png" class="avatar" alt="Happy Avatar" />
+    <h1>Sandip Mali</h1>
+    <p>🎥 Content Creator | 💻 Web Developer</p>
+  </div>
+
+  <p class="intro">Let’s connect! Explore all my work, content, and collaborations from one place.</p>
+
+  <div class="section">
+    <h2>Social Media</h2>
+    <div class="link-grid">
+      <a class="card" href="https://www.youtube.com/@dimvlogs2" target="_blank">
+        <i class="fab fa-youtube" style="color: red;" aria-label="YouTube"></i>
+        <span class="title">YouTube</span>
+        <span class="handle">@dimvlogs2</span>
+      </a>
+      <a class="card" href="https://www.instagram.com/sandipmalii/" target="_blank">
+        <i class="fab fa-instagram" style="color: #e1306c;" aria-label="Instagram"></i>
+        <span class="title">Instagram</span>
+        <span class="handle">@sandipmalii</span>
+      </a>
+      <a class="card" href="https://www.facebook.com/sanmalli21/" target="_blank">
+        <i class="fab fa-facebook" style="color: #3b5998;" aria-label="Facebook"></i>
+        <span class="title">Facebook</span>
+        <span class="handle">@sannmalli</span>
+      </a>
+      <a class="card" href="https://t.me/dimvlogs" target="_blank">
+        <i class="fab fa-telegram" style="color: #0088cc;" aria-label="Telegram"></i>
+        <span class="title">Telegram</span>
+        <span class="handle">@Dimvlogs</span>
+      </a>
+      <a class="card" href="https://x.com/sandipmalii" target="_blank">
+        <i class="fab fa-twitter" style="color: #1DA1F2;" aria-label="Twitter"></i>
+        <span class="title">Twitter (X)</span>
+        <span class="handle">@sandipmalii</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Professional</h2>
+    <div class="link-grid">
+      <a class="card" href="https://www.linkedin.com/in/sandipmali/" target="_blank">
+        <i class="fab fa-linkedin" style="color: #0077B5;" aria-label="LinkedIn"></i>
+        <span class="title">LinkedIn</span>
+        <span class="handle">in/sandipmali</span>
+      </a>
+      <a class="card" href="https://github.com/sandipmalii" target="_blank">
+        <i class="fab fa-github" aria-label="GitHub"></i>
+        <span class="title">GitHub</span>
+        <span class="handle">@sandipmalii</span>
+      </a>
+      <a class="card" href="https://sandipmali.com.np/" target="_blank">
+        <i class="fas fa-globe" style="color: #38bdf8;" aria-label="Portfolio"></i>
+        <span class="title">Portfolio</span>
+        <span class="handle">sandipmali.com.np</span>
+      </a>
+      <a class="card" href="mailto:collabwithsandipmali@gmail.com">
+        <i class="fas fa-envelope" style="color: #facc15;" aria-label="Email"></i>
+        <span class="title">Email</span>
+        <span class="handle">collabwithsandipmali@gmail.com</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Support Me</h2>
+    <div class="link-grid">
+      <a class="card" href="https://coff.ee/sandipmali" target="_blank">
+        <i class="fas fa-mug-hot" style="color: #ffdd00;" aria-label="Buy Me a Coffee"></i>
+        <span class="title">Buy Me a Coffee</span>
+        <span class="handle">support my work!</span>
+      </a>
+      <a class="card" href="https://buymeacoffee.com/sandipmali/e/419135" target="_blank">
+        <i class="fas fa-user-clock" style="color: #4ade80;" aria-label="Book a Session"></i>
+        <span class="title">1-on-1 Session</span>
+        <span class="handle">Book a session</span>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Sandip Mali | All rights reserved
+  </footer>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('light-mode');
+    }
+  </script>
+</body>
+</html>
